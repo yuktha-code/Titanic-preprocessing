@@ -1,0 +1,5 @@
+feature,iqr_multiplier,q1,q3,iqr,lower_bound,upper_bound,outlier_rows,used_for_removal
+Age,1.5,21.0,36.75,15.75,-2.625,60.375,22,False
+Fare,1.5,7.9104,31.0,23.0896,-26.724,65.6344,116,False
+Age,3.0,21.0,36.75,15.75,-26.25,84.0,0,True
+Fare,3.0,7.9104,31.0,23.0896,-61.3584,100.2688,53,True

@@ -1,0 +1,17 @@
+column,dtype,rows,non_null_count,missing_count,missing_percent,unique_values,example_value
+PassengerId,int64,838,838,0,0.0,838,1
+Survived,int64,838,838,0,0.0,2,0
+Pclass,int64,838,838,0,0.0,3,3
+Sex,object,838,838,0,0.0,2,male
+Age,float64,838,838,0,0.0,87,22.0
+SibSp,int64,838,838,0,0.0,7,1
+Parch,int64,838,838,0,0.0,7,0
+Fare,float64,838,838,0,0.0,228,7.25
+Embarked,object,838,838,0,0.0,3,S
+Title,object,838,838,0,0.0,5,Mr
+Deck,object,838,838,0,0.0,9,Unknown
+CabinKnown,int64,838,838,0,0.0,2,0
+FamilySize,int64,838,838,0,0.0,9,2
+IsAlone,int64,838,838,0,0.0,2,0
+TicketGroupSize,int64,838,838,0,0.0,7,1
+FarePerPerson,float64,838,838,0,0.0,229,7.25

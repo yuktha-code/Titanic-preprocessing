@@ -1,0 +1,13 @@
+column,dtype,rows,non_null_count,missing_count,missing_percent,unique_values,example_value
+PassengerId,int64,891,891,0,0.0,891,1
+Survived,int64,891,891,0,0.0,2,0
+Pclass,int64,891,891,0,0.0,3,3
+Name,object,891,891,0,0.0,891,"Braund, Mr. Owen Harris"
+Sex,object,891,891,0,0.0,2,male
+Age,float64,891,714,177,19.87,88,22.0
+SibSp,int64,891,891,0,0.0,7,1
+Parch,int64,891,891,0,0.0,7,0
+Ticket,object,891,891,0,0.0,681,A/5 21171
+Fare,float64,891,891,0,0.0,248,7.25
+Cabin,object,891,204,687,77.1,147,C85
+Embarked,object,891,889,2,0.22,3,S

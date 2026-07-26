@@ -1,0 +1,83 @@
+{
+  "input_file": "Titanic-Dataset.csv",
+  "input_rows": 891,
+  "input_columns": 12,
+  "duplicate_rows_found": 0,
+  "rows_after_duplicate_removal": 891,
+  "outlier_policy": "Document the standard 1.5x IQR result, but remove only extreme 3.0x IQR outliers from Age and Fare to reduce unnecessary data loss.",
+  "selected_outlier_bounds": {
+    "Age": {
+      "lower": -26.25,
+      "upper": 84.0
+    },
+    "Fare": {
+      "lower": -61.3584,
+      "upper": 100.2688
+    }
+  },
+  "extreme_outlier_rows_removed": 53,
+  "final_rows": 838,
+  "final_columns": 33,
+  "missing_values_before": {
+    "PassengerId": 0,
+    "Survived": 0,
+    "Pclass": 0,
+    "Name": 0,
+    "Sex": 0,
+    "Age": 177,
+    "SibSp": 0,
+    "Parch": 0,
+    "Ticket": 0,
+    "Fare": 0,
+    "Cabin": 687,
+    "Embarked": 2
+  },
+  "missing_values_after_total": 0,
+  "survival_rate_before": 0.3838,
+  "survival_rate_after": 0.3616,
+  "imputation_details": {
+    "duplicate_rows_removed": 0,
+    "age_values_imputed": 177,
+    "age_imputation": "Median within Sex x Pclass x Title groups; overall median fallback",
+    "embarked_values_imputed": 2,
+    "embarked_imputation": "Mode (S)",
+    "cabin_handling": "Converted to Deck and CabinKnown; missing decks marked Unknown"
+  },
+  "encoding": "One-hot encoding for Pclass, Sex, Embarked, Title, and Deck",
+  "scaling": "StandardScaler for continuous and count features",
+  "output_feature_columns": [
+    "PassengerId",
+    "Survived",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "CabinKnown",
+    "FamilySize",
+    "IsAlone",
+    "TicketGroupSize",
+    "FarePerPerson",
+    "Pclass_1",
+    "Pclass_2",
+    "Pclass_3",
+    "Sex_female",
+    "Sex_male",
+    "Embarked_C",
+    "Embarked_Q",
+    "Embarked_S",
+    "Title_Master",
+    "Title_Miss",
+    "Title_Mr",
+    "Title_Mrs",
+    "Title_Rare",
+    "Deck_A",
+    "Deck_B",
+    "Deck_C",
+    "Deck_D",
+    "Deck_E",
+    "Deck_F",
+    "Deck_G",
+    "Deck_T",
+    "Deck_Unknown"
+  ]
+}
